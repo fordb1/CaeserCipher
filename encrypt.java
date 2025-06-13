@@ -1,13 +1,14 @@
-import java.util.Scanner
+import java.util.*;
+import java.io.*;
 
 public static void main(String[] args){
   Scanner sc = new Scanner(System.in);
 
   System.out.print("Enter text to encrypt: ");
-  String inputText = scanner.nextLine();
+  String inputText = sc.nextLine();
 
   System.out.print("Enter shift key (0-25): ");
-  int shiftKey = scanner.nextInt();
+  int shiftKey = sc.nextInt();
 
   String encrypted = encrypt(inputText, shiftKey);
   System.out.println("Encrypted text: " + encrypted);
